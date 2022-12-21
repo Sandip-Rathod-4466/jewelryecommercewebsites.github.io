@@ -1,0 +1,55 @@
+
+/* for tabs */
+@media only screen and (max-width: 991px) {
+    .navbar{
+        background-color: var(--black-color);
+        text-align: center;
+    }
+    .navbar .navbar-brand img{
+        width: 7rem;
+    }
+    .braselats{
+    margin: 10px 5px;
+    }
+}
+
+/* for mobiles */
+@media only screen and (max-width: 767px) {
+    .carousel-caption{
+        text-align: center;
+        top: 70%;
+    }
+    .carousel-caption .main-btn{
+        font-size: 10px;
+        padding: 5px 30px;
+    }
+    .carousel-caption h1{
+        font-size: 2rem;
+        margin-bottom: .5rem;
+    }
+    .carousel-caption p{
+        font-size: 10px;
+        line-height: normal;
+        margin-bottom: 5px;
+    }
+    .carousel-inner{
+        padding: 13% 0;
+    }
+    .top-header div{
+        font-size: 12px;
+    }
+    .nav-pills{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-pills button{
+        font-size: 10px;
+        margin: 0;
+    }
+    .day_of_deal{
+        padding: 3%;
+    }
+
+}

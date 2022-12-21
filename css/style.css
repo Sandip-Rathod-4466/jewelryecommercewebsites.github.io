@@ -1,0 +1,294 @@
+@import url(../css/fonts.css);
+
+    /* font-family: Poppins; */
+    /* font-family: Roboto; */
+    /* font-family: oswald; */
+    /* <i class="fa-regular fa-heart"></i> */
+    
+*{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    justify-content: center;
+}
+body{
+    font-family: oswald;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+:root{
+    --primary-color:#F66B0E;
+    --secondary-color:#205375;
+    --white-color:#EFEFEF;
+    --black-color:#112B3C;
+}
+
+::-webkit-scrollbar{
+    width: 0.625rem;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--primary-color);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--white-color);
+}
+
+a,
+a:hover{
+    text-decoration: none !important;
+}
+a:hover{
+    color: var(--primary-color) !important;
+}
+
+
+
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--white-color);
+    text-align: center;
+    text-transform: capitalize;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--white-color);
+    text-align: center;
+    text-transform: capitalize;
+}
+h3{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white-color);
+    text-align: center;
+    text-transform: capitalize;
+}
+.wrapper{
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.main-btn{
+    display: inline-block;
+    border: none;
+    padding: 8px 30px;
+    text-align: center;
+    text-transform: capitalize;
+    background: none;
+    color: var(--white-color);
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    transition: all 0.2s ease-in;
+}
+.main-btn:hover{
+    border-color: var(--white-color);
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+/*  */
+.top-header{
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.navbar .navbar-brand img{
+    width: 9rem;
+}
+.navbar .nav-item{
+    margin: 0 14px;
+}
+.navbar .nav-link{
+    padding: 16px;
+    color: var(--white-color) !important;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.2s ease-in;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.navbar .nav-link:hover{
+    color: var(--primary-color) !important;
+}
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-toggler .navbar-toggler-icon i{
+    font-size: 30px;
+    color: var(--primary-color);
+}
+.sticky-on{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background-color: var(--secondary-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: right;
+}
+.carousel-caption{
+    top: 50%;
+    text-align: center;
+    transform: translateY(-100px);
+}
+.carousel-caption h1{
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+.carousel-caption p{
+    line-height: 30px;
+}
+.arrivals-banner{
+    background-color: var(--black-color);
+}
+.arrivals-banner h2{
+    color: var(--white-color);
+}
+.arrivals-banner p{
+    margin: 15px 0;
+    color: var(--white-color);
+}
+.card{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 0;
+    box-shadow: #efefef64 0px 5px 15px;
+}
+.card .img img{
+    transition: all 0.3s ease-in;
+}
+.card .img_details{
+    position: absolute;
+    bottom: 6%;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+.img_details2 h2,.img_details2 p,.img_details2 button{
+    color: var(--black-color) !important;
+}
+
+.product-banner{
+    background: var(--black-color);
+}
+   
+.product_details{
+    text-align: center;
+    color: var(--white-color);
+}
+
+.braselats{
+    cursor: pointer;
+}
+
+.braselats .b-imag{
+    overflow: hidden;
+}
+.braselats img{
+    transition: all 0.2s ease-in;
+}
+
+.braselats:hover img{
+    transform: scale(1.1);
+}
+.braselats .like{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    margin-bottom: 7px;
+}
+.braselats .like i{
+    font-size: 1.5rem;
+    color: pink;
+}
+.braselats > h3{
+    text-align: left;
+}
+.braselats .price{
+    color: var(--white-color);
+    margin: 0;
+}
+.braselats .icons i{
+    color: gold;
+}
+#pills-home-tab,#pills-profile-tab,#pills-contact-tab{
+    background: none;
+    border: 2px solid var(--white-color) !important;
+    border-radius: 23px;
+    padding: 5px 30px;
+    margin: 0 10px;
+    color: var(--white-color);
+}
+.nav-pills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active{
+    color: green !important;
+}
+.deal_banner{
+    background: gray;
+    padding: 0;
+}
+.day_of_deal{
+    background: url("../images/img/img-4.jpg") no-repeat center center/cover;
+    padding: 5%;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+.blog_banner{
+    background-color: var(--black-color);
+}
+.blog_details{
+    text-align: center;
+    color: var(--white-color);
+}
+.blog_imgs{
+    text-align: center;
+    padding: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+.blog_imgs h2{
+    margin-top: 20px;
+}
+.blog_imgs p{
+    margin: 20px 0;
+    color: var(--white-color);
+    padding:0% 10%;
+}
+
